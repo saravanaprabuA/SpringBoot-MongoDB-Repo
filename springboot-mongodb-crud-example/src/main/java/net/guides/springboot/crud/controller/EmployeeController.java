@@ -23,7 +23,9 @@ import net.guides.springboot.crud.model.Employee;
 import net.guides.springboot.crud.repository.EmployeeRepository;
 import net.guides.springboot.crud.service.SequenceGeneratorService;
 
-@CrossOrigin(origins = "http://localhost:4200")
+//@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "*" )
+//@CrossOrigin(origins = "http://192.168.99.100:5000")
 @RestController
 @RequestMapping("/api/v1")
 public class EmployeeController {
